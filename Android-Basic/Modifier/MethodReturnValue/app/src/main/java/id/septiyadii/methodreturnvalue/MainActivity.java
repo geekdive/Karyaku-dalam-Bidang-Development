@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
     //TODO 1: Method Biasa tanpa Value
     public void MethodBiasa(){
-        Toast.makeText(this, "Mengakses Method Biasa dengan Button", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Mengakses Method Biasa dengan Button", Toast.LENGTH_LONG).show();
     }
 
     //TODO 2: Method dengan Return Value
     public void MethodReturnValue(String isipesan){
-        Toast.makeText(this, isipesan, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, isipesan, Toast.LENGTH_LONG).show();
     }
 }
