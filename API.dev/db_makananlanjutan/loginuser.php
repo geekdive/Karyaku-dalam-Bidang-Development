@@ -38,7 +38,7 @@
 //      $leveldetails = mysqli_query($con, "SELECT nama as nm FROM tbluser WHERE nama= '$vsuser'"); 
         #If no data was returned, check for any SQL errors 
         if (!$leveldetails) { 
-	echo 'Could not run query: ' . mysqli_error($connection); 
+	        echo 'Could not run query: ' . mysqli_error($connection); 
            	exit;
         } 
   
@@ -46,18 +46,16 @@
         $row = mysqli_fetch_row($leveldetails); 
 
         #Build the result array (Assign keys to the values) 
-        $result_data = array( 
+        $result_data = array ( 
             'nama' => $row[0],
             'alamat' => $row[1],
             'jenkel' => $row[2],
-            'no_telp'   => $row[3],
-            'id_user'   => $row[4],
+            'no_telp' => $row[3],
+            'id_user' => $row[4],
             'username' => $row[5],
-		'password' => $row[6],
-        'level' => $row[7]
-
-
-            ); 
+		    'password' => $row[6],
+            'level' => $row[7]
+        ); 
 
 
 
