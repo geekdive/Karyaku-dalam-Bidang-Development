@@ -1,7 +1,7 @@
 <?php
- include './koneksi/config.php';
+ include '../koneksi/config.php';
 
-    $sql = "SELECT * FROM tbl_kategori";
+    $sql = "SELECT * FROM tbl_users";
 
     $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 
@@ -14,7 +14,7 @@
    
     $akhir = array(
 	
-   	'DataListKategori' => $emparray
+   	'DataListUser' => $emparray
     );
 
  	echo json_encode($akhir);

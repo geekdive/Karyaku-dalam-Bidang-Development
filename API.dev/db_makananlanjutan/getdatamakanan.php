@@ -22,7 +22,7 @@ include './config/koneksi.php';
     }
    
     $akhir = array(
-   	'DataMakanan' => $emparray
+       'DataMakanan' => $emparray
     );
 
  	echo json_encode($akhir);

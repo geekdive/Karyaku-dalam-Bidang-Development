@@ -1,9 +1,10 @@
 <?php
- include './koneksi/config.php';
+ include '../koneksi/config.php';
 
-    $sql = "SELECT * FROM tbl_users";
+    $sql = "SELECT * FROM tbl_inventori";
 
     $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+    
 
     //create an array
     $emparray = array();
@@ -13,13 +14,11 @@
     }
    
     $akhir = array(
-	
-   	'DataListUser' => $emparray
+   	'DataListInventori' => $emparray
     );
+    
 
- 	echo json_encode($akhir);
-
-
+    echo json_encode($akhir);
     //close the db connection
     mysqli_close($connection);
 ?>

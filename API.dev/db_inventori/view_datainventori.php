@@ -16,7 +16,7 @@ include './koneksi/config.php';
     }
    
     $akhir = array(
-   	'DataInventoriSelecting' => $emparray
+   	'DataInventori' => $emparray
     );
 
     echo json_encode($akhir);

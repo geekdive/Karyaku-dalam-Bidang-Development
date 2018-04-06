@@ -1,6 +1,6 @@
 <?php
 
-include './koneksi/config.php';
+include '../koneksi/config.php';
 
     $vsidusr = $_POST['vsiduser'];
     $vsidcat = $_POST['vsidkategori'];

@@ -26,7 +26,7 @@
         'no_telp' => $row[3],
         'jenis_kelamin' => $row[4],
         'username' => $row[5],
-	'password' => $row[6],
+	    'password' => $row[6],
         'level_user' => $row[7]
     ); 
 
